@@ -5,3 +5,8 @@ For this challenge, I was given a starter code and was tasked with refactoring t
 I used JavaScript, jQuery, and third-party APIs to display a planner for the average worker to delegate different tasks at different times of the work day.
 
 # Link to Deployed Page
+https://jpick77.github.io/Work-Schedule/
+
+# Screenshot of Code and Website
+![Alt text](./images/screenshot.16.png "web.schedule.png")
+![Alt text](./images/screenshot.17.png "web.schedule.pic.1.png")
