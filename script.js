@@ -40,16 +40,17 @@ $(function () {
        // saveBtn click listener 
     $(".saveBtn").on ("click", function () {
       var textOne = $(this).siblings(".description").val();
-      console.log(textOne)
+      console.log(textOne);
       var timeOne = $(this).parent().attr("id");
-      console.log(timeOne)
+      console.log(timeOne);
 
       // Save text in local storage
       localStorage.setItem(timeOne, textOne);
 
       
-    });
 
+    });
+    
     $('.description').val(localStorage.getItem(textOne));
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
