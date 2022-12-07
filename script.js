@@ -19,6 +19,17 @@ $(function () {
     }else {
       $(this).addClass('present');
     }
+
+    $('#17 .description').val(localStorage.getItem('17'));
+    $('#16 .description').val(localStorage.getItem('16'));
+    $('#15 .description').val(localStorage.getItem('15'));
+    $('#14 .description').val(localStorage.getItem('14'));
+    $('#13 .description').val(localStorage.getItem('13'));
+    $('#12 .description').val(localStorage.getItem('12'));
+    $('#11 .description').val(localStorage.getItem('11'));
+    $('#10 .description').val(localStorage.getItem('10'));
+    $('#9 .description').val(localStorage.getItem('9'));
+
   })
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
@@ -28,17 +39,18 @@ $(function () {
   // useful when saving the description in local storage?
        // saveBtn click listener 
     $(".saveBtn").on ("click", function () {
-      var text = $(this).siblings(".description").val();
-      console.log(text)
-      var time = $(this).parent().attr("id");
-      console.log(time)
+      var textOne = $(this).siblings(".description").val();
+      console.log(textOne)
+      var timeOne = $(this).parent().attr("id");
+      console.log(timeOne)
 
       // Save text in local storage
-      localStorage.setItem(time, text);
+      localStorage.setItem(timeOne, textOne);
+
       
     });
 
-    $('.description').val(localStorage.getItem(text));
+    $('.description').val(localStorage.getItem(textOne));
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
   // attribute of each time-block be used to conditionally add or remove the
